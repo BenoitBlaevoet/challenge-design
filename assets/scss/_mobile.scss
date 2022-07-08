@@ -1,22 +1,56 @@
 @import 'colors';
+@import 'fonts';
+@import 'mymixins';
 @import './fontawesome/scss/fontawesome.scss';
 @import './fontawesome/scss/solid.scss';
 @import './fontawesome/scss/brands.scss';
 
 // 360 width for mobile device
-@font-face {
-    font-family: montserrat;
-    src: url(../fonts/Montserrat-VariableFont_wght.ttf) format('trutype');
-}
 html{
-    font-family: montserrat, sans-serif;
+    font-family: montserrat, Arial, Helvetica, sans-serif;
+}
+h1, h2, h3,
+h4, h5, h6 {
+    font-family:  Merriweather-Bold, Garamond, Georgia, 'Times New Roman', Times, serif;
+    font-weight: 700;
+    font-style: normal;
+} 
+h1{
+    font-size: 2.44em;
+}
+h2{
+    font-size: 2.25em;
+}
+h3{
+    font-size: 1.5em;
+}
+h4{
+    font-size: 1.37em;
+}
+h5{
+    font-size: 1.25em;
+}
+h6{
+    font-size: 1.15em;
 }
 body{
     padding: 0;
     margin: 0;
 }
-.text-accent{
+.text{
+    &-accent{
     color: $color-accent;
+        &-bold{
+            @extend .text-accent;
+            font-weight: bold;
+        }
+    }
+    &-size08{
+        font-size: 0.875em;
+    }
+    &-size11{
+        font-size: 1.12em;
+    }
 }
 .button{
     text-decoration: none;
@@ -31,6 +65,9 @@ body{
     justify-content: center;
     font-size: 1.125em;
     font-weight: 700;
+    &:hover, &:focus{
+        background-color: darken($color-accent, 10%);
+    }
     span{
         font-size: 1.25em;
     }
@@ -45,11 +82,11 @@ header{
         background-size: cover;
         min-width: 360px;
         min-height: 200px;
-        height: 0.55vw;
+        height: 55vw;
     }
     #call-to-action{
         background-color: $color-white;
-        padding: 10px;
+        padding: 10px 10px 20px 10px;
         box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
         &-title{
             font-size: 2em;
@@ -61,4 +98,28 @@ header{
 }
 section{
     margin-top: 50px;
+    padding: 10px;
+    a{
+        text-decoration: none;
+        &:hover:not(.button), &:focus:not(.button){
+            filter: brightness(90%);
+            text-decoration: underline;
+        }
+    }
+    article{
+        &+article{
+            margin-top: 50px;
+        }      
+    }
+}
+#possibilities{
+    article{
+        display: flex;
+        flex-direction: column;
+        img{
+            align-self: center;
+            width: 80%;
+            max-width: 320px;
+        }
+    }
 }
