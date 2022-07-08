@@ -12688,12 +12688,12 @@ h4 {
 
 /* line 30, ../../OneDrive/Documents/BeCode/challenge-design/assets/scss/_mobile.scss */
 h5 {
-  font-size: 1.25em;
+  font-size: 1.12em;
 }
 
 /* line 33, ../../OneDrive/Documents/BeCode/challenge-design/assets/scss/_mobile.scss */
 h6 {
-  font-size: 1.15em;
+  font-size: 1em;
 }
 
 /* line 36, ../../OneDrive/Documents/BeCode/challenge-design/assets/scss/_mobile.scss */
@@ -12722,7 +12722,12 @@ body {
   font-size: 1.12em;
 }
 
-/* line 55, ../../OneDrive/Documents/BeCode/challenge-design/assets/scss/_mobile.scss */
+/* line 54, ../../OneDrive/Documents/BeCode/challenge-design/assets/scss/_mobile.scss */
+.text-size15 {
+  font-size: 1.5em;
+}
+
+/* line 58, ../../OneDrive/Documents/BeCode/challenge-design/assets/scss/_mobile.scss */
 .button {
   text-decoration: none;
   color: #fff;
@@ -12738,22 +12743,22 @@ body {
   font-weight: 700;
 }
 
-/* line 68, ../../OneDrive/Documents/BeCode/challenge-design/assets/scss/_mobile.scss */
+/* line 71, ../../OneDrive/Documents/BeCode/challenge-design/assets/scss/_mobile.scss */
 .button:hover, .button:focus {
   background-color: #f45835;
 }
 
-/* line 71, ../../OneDrive/Documents/BeCode/challenge-design/assets/scss/_mobile.scss */
+/* line 74, ../../OneDrive/Documents/BeCode/challenge-design/assets/scss/_mobile.scss */
 .button span {
   font-size: 1.25em;
 }
 
-/* line 74, ../../OneDrive/Documents/BeCode/challenge-design/assets/scss/_mobile.scss */
+/* line 77, ../../OneDrive/Documents/BeCode/challenge-design/assets/scss/_mobile.scss */
 .button p {
   margin-left: 10px;
 }
 
-/* line 79, ../../OneDrive/Documents/BeCode/challenge-design/assets/scss/_mobile.scss */
+/* line 82, ../../OneDrive/Documents/BeCode/challenge-design/assets/scss/_mobile.scss */
 header #header-bg {
   background-image: url("../images/header.png");
   background-repeat: no-repeat;
@@ -12763,56 +12768,100 @@ header #header-bg {
   height: 55vw;
 }
 
-/* line 87, ../../OneDrive/Documents/BeCode/challenge-design/assets/scss/_mobile.scss */
+/* line 90, ../../OneDrive/Documents/BeCode/challenge-design/assets/scss/_mobile.scss */
 header #call-to-action {
   background-color: #fff;
   padding: 10px 10px 20px 10px;
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
 }
 
-/* line 91, ../../OneDrive/Documents/BeCode/challenge-design/assets/scss/_mobile.scss */
+/* line 94, ../../OneDrive/Documents/BeCode/challenge-design/assets/scss/_mobile.scss */
 header #call-to-action-title {
   font-size: 2em;
 }
 
-/* line 94, ../../OneDrive/Documents/BeCode/challenge-design/assets/scss/_mobile.scss */
+/* line 97, ../../OneDrive/Documents/BeCode/challenge-design/assets/scss/_mobile.scss */
 header #call-to-action-button {
   margin: auto;
 }
 
-/* line 99, ../../OneDrive/Documents/BeCode/challenge-design/assets/scss/_mobile.scss */
+/* line 102, ../../OneDrive/Documents/BeCode/challenge-design/assets/scss/_mobile.scss */
 section {
   margin-top: 50px;
   padding: 10px;
 }
 
-/* line 102, ../../OneDrive/Documents/BeCode/challenge-design/assets/scss/_mobile.scss */
+/* line 105, ../../OneDrive/Documents/BeCode/challenge-design/assets/scss/_mobile.scss */
 section a {
   text-decoration: none;
 }
 
-/* line 104, ../../OneDrive/Documents/BeCode/challenge-design/assets/scss/_mobile.scss */
+/* line 107, ../../OneDrive/Documents/BeCode/challenge-design/assets/scss/_mobile.scss */
 section a:hover:not(.button), section a:focus:not(.button) {
   filter: brightness(90%);
   text-decoration: underline;
 }
 
-/* line 110, ../../OneDrive/Documents/BeCode/challenge-design/assets/scss/_mobile.scss */
+/* line 113, ../../OneDrive/Documents/BeCode/challenge-design/assets/scss/_mobile.scss */
 section article + article {
   margin-top: 50px;
 }
 
-/* line 116, ../../OneDrive/Documents/BeCode/challenge-design/assets/scss/_mobile.scss */
+/* line 119, ../../OneDrive/Documents/BeCode/challenge-design/assets/scss/_mobile.scss */
 #possibilities article {
   display: flex;
   flex-direction: column;
 }
 
-/* line 119, ../../OneDrive/Documents/BeCode/challenge-design/assets/scss/_mobile.scss */
+/* line 122, ../../OneDrive/Documents/BeCode/challenge-design/assets/scss/_mobile.scss */
 #possibilities article img {
   align-self: center;
   width: 80%;
   max-width: 320px;
+}
+
+/* line 129, ../../OneDrive/Documents/BeCode/challenge-design/assets/scss/_mobile.scss */
+footer {
+  background-color: #F7F7F7;
+  display: flex;
+  flex-direction: column;
+  font-size: 0.85em;
+}
+
+/* line 135, ../../OneDrive/Documents/BeCode/challenge-design/assets/scss/_mobile.scss */
+footer h3 {
+  text-align: center;
+}
+
+/* line 138, ../../OneDrive/Documents/BeCode/challenge-design/assets/scss/_mobile.scss */
+footer blockquote {
+  margin: auto;
+  width: 150px;
+  font-size: 3em;
+  font-family: Merriweather-Bold;
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* line 146, ../../OneDrive/Documents/BeCode/challenge-design/assets/scss/_mobile.scss */
+footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* line 149, ../../OneDrive/Documents/BeCode/challenge-design/assets/scss/_mobile.scss */
+footer ul a {
+  color: #000;
+}
+
+/* line 151, ../../OneDrive/Documents/BeCode/challenge-design/assets/scss/_mobile.scss */
+footer ul a:visited {
+  color: #000;
+}
+
+/* line 154, ../../OneDrive/Documents/BeCode/challenge-design/assets/scss/_mobile.scss */
+footer ul a:hover, footer ul a:focus {
+  color: #1a1a1a;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -28,10 +28,10 @@ h4{
     font-size: 1.37em;
 }
 h5{
-    font-size: 1.25em;
+    font-size: 1.12em;
 }
 h6{
-    font-size: 1.15em;
+    font-size: 1em;
 }
 body{
     padding: 0;
@@ -50,6 +50,9 @@ body{
     }
     &-size11{
         font-size: 1.12em;
+    }
+    &-size15{
+        font-size: 1.5em;
     }
 }
 .button{
@@ -121,5 +124,38 @@ section{
             width: 80%;
             max-width: 320px;
         }
+    }
+}
+footer{
+    background-color: $color-gray;
+    display: flex;
+    flex-direction: column;
+    font-size: 0.85em;
+    
+    h3{
+        text-align: center;
+    }
+    blockquote{
+        margin: auto;
+        width: 150px;
+        font-size: 3em;
+        font-family: Merriweather-Bold;
+        font-weight: 700;
+        font-style: normal;
+    }
+    ul{
+        list-style: none;
+        padding: 0;
+        a{
+            color: $color-black;
+            &:visited{
+                color: $color-black;
+            }
+            &:hover, &:focus{
+                color: lighten($color-black, 10%);
+                
+            }
+        }
+        
     }
 }
