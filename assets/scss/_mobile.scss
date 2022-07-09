@@ -1,11 +1,8 @@
 @import 'colors';
 @import 'fonts';
-@import 'mymixins';
-@import './fontawesome/scss/fontawesome.scss';
-@import './fontawesome/scss/solid.scss';
-@import './fontawesome/scss/brands.scss';
-
-// 360 width for mobile device
+@import 'mixins';
+@import 'variables';
+// 360 to 599 width for mobile device
 html{
     font-family: montserrat, Arial, Helvetica, sans-serif;
 }
@@ -71,11 +68,19 @@ body{
     &:hover, &:focus{
         background-color: darken($color-accent, 10%);
     }
-    span{
-        font-size: 1.25em;
+    &-start{
+        @include icons(
+            $icon-size: 24px,
+            $icon-path: $icon-start-path,
+            $icon-color: $color-accent,
+        )
     }
-    p{
-        margin-left: 10px;
+    &-web{
+        @include icons(
+        $icon-size: 24px,
+        $icon-path: $icon-globe-path,
+        $icon-color: $color-accent,
+    )
     }
 }
 header{
@@ -126,14 +131,88 @@ section{
         }
     }
 }
+#tools{
+    &-choose{
+        @include icons(
+            $position: before,
+            $icon-size: 32px,
+            $icon-path: $icon-choose-path,
+            $icon-color: $color-white
+        )
+    }&-describe{
+        @include icons(
+            $position: before,
+            $icon-size: 32px,
+            $icon-path: $icon-describe-path,
+        )
+    }&-build{
+        @include icons(
+            $position: before,
+            $icon-size: 32px,
+            $icon-path: $icon-build-path,
+        )
+    }&-availability{
+        @include icons(
+            $position: before,
+            $icon-size: 32px,
+            $icon-path: $icon-availability-path,
+        )
+    }
+}
+#community{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &-cta{
+        display: flex;
+        flex-direction: column;
+        p{
+            text-align: center;
+        }
+        .button{
+            align-self: center;
+        }
+    }
+}
+#advantages{
+    &-convenience{
+        @include icons(
+            $position: before,
+            $icon-size: 32px,
+            $icon-path: $icon-convenience-path,
+        )
+    }
+    &-editorial{
+        @include icons(
+            $position: before,
+            $icon-size: 32px,
+            $icon-path: $icon-editorial-path,
+        )
+    }
+    &-community{
+        @include icons(
+            $position: before,
+            $icon-size: 32px,
+            $icon-path: $icon-community-path,
+        )
+    }
+}
 footer{
     background-color: $color-gray;
     display: flex;
     flex-direction: column;
     font-size: 0.85em;
-    
+    hr{
+        border-color: $color-black;
+        border: 0 0 1px 0;
+        width: 98%;
+        opacity: 0.5;
+    }
     h3{
         text-align: center;
+    }
+    #about{
+        margin-top: 10px;
     }
     blockquote{
         margin: auto;

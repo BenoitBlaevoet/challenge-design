@@ -1,0 +1,28 @@
+@mixin icons (
+  $position: before,
+  $icon-size: 14px,
+  $icon-path: $icon-default-path,
+  $icon-color: $color-black) {
+  @if $position == "before" {
+    &:before {
+      content: "";
+      background-image: url($icon-path);
+      width: $icon-size;
+      height: $icon-size;
+      color: $icon-color;
+      display: block;
+      margin-right: 8px;
+    }
+  }
+  @else if $position == "after" {
+    &:after {
+      content: "";
+      background-image: url($icon-path);
+      width: $icon-size;
+      height: $icon-size;
+      color: $icon-color;
+      display: block;
+      margin-left: 8px;
+    }
+  }
+}
