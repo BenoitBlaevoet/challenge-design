@@ -1,0 +1,142 @@
+// Layout for screen starting at 800px
+@media only screen and (min-width: 800px){
+    .content-wrapper{
+        min-width: 800px;
+        max-width: 1440px;
+        margin: auto;
+    }
+    //Potentiellement effectuer ce changement a 1200px
+    header{
+        position: relative;
+        #call-to-action{
+            box-sizing: border-box;
+            position: absolute;
+            width: 741px;
+            height: 537px;
+            margin-left: 63px;
+            bottom: -264px;
+            padding: 96px 150px 75px 64px;
+            &-button{
+                margin: 0; 
+            }
+        }
+        margin-bottom: 264px+128px;
+    }
+    section:not(#sitemap, #about){
+        padding: 0 100px;
+        article{
+            &+article{
+                margin-top: 0px;
+            }      
+        }
+    }
+    #possibilities{
+        &-wrapper{
+            display: flex;
+            justify-content: space-around;
+            article{
+                display: grid;
+                grid-template-rows: 247px 120px 80px 120px ;
+                width: 386px;
+                img{
+                    width: 64%;
+                }
+            }
+        }
+        
+    }
+    #tools{
+        margin-bottom: 260px;
+        &-wrapper{
+            display: grid;
+            grid-template-areas: 
+                                "title title"
+                                "b c"
+                                "d e";
+            grid-template-columns: 1fr 1fr;
+            @media only screen and (min-width: 1150px) {
+                grid-template-areas: 
+                                    "title title title title"
+                                    "b c d e"; 
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+            }
+            align-items: baseline;
+            h2{
+                grid-area: title;
+                margin-bottom: 108px;
+            }
+            h4{
+                margin-top:64px;
+            }
+            article{
+                display: grid;
+                grid-template-rows: auto auto 75px auto;
+            }
+        }
+    }
+    #community{
+        display: block;
+        margin-bottom: 232px;
+        &-wrapper{
+            display: grid;
+            grid-template-columns: 440px 1fr 1fr 1fr;
+            #community-cta{
+                display: block;
+                padding-right: 100px;
+                p{
+                    text-align: left;
+                }
+            }
+        }
+    }
+    
+    #advantages{ 
+        margin-bottom: 251px;   
+        &-wrapper{
+            display: grid;
+            grid-template-areas: 
+                                "title title title"
+                                "b c d"; 
+            grid-template-columns: 1fr 1fr 1fr;
+            article{
+                display: grid;
+                grid-template-rows: 96px 80px auto;
+            }
+            article+article{
+                margin-left: 41px;
+            }
+        }
+        h2{
+            grid-area: title;
+            margin-bottom: 108px;
+        }
+    }
+    footer{
+        padding: 96px 103px 65px 103px;
+        display: block;
+        #sitemap{
+            margin-bottom: 85px;
+            h3{
+                text-align: left;
+            }
+            li{
+                margin-bottom: 24px;
+            }
+            display: flex;
+            justify-content: space-between;
+        }
+        hr{
+            margin-bottom: 18px;
+        }
+        #about{
+            display: flex;
+            .link-list-flat{
+                margin-left: auto;
+                display: flex;
+                li+li{
+                    margin-left: 48px;
+                }
+            }
+        }
+    }
+}

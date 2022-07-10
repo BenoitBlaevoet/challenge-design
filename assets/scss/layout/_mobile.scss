@@ -1,57 +1,4 @@
-@import 'colors';
-@import 'fonts';
-@import 'mixins';
-@import 'variables';
 // 360 to 599 width for mobile device
-html{
-    font-family: montserrat, Arial, Helvetica, sans-serif;
-}
-h1, h2, h3,
-h4, h5, h6 {
-    font-family:  Merriweather-Bold, Garamond, Georgia, 'Times New Roman', Times, serif;
-    font-weight: 700;
-    font-style: normal;
-} 
-h1{
-    font-size: 2.44em;
-}
-h2{
-    font-size: 2.25em;
-}
-h3{
-    font-size: 1.5em;
-}
-h4{
-    font-size: 1.37em;
-}
-h5{
-    font-size: 1.12em;
-}
-h6{
-    font-size: 1em;
-}
-body{
-    padding: 0;
-    margin: 0;
-}
-.text{
-    &-accent{
-    color: $color-accent;
-        &-bold{
-            @extend .text-accent;
-            font-weight: bold;
-        }
-    }
-    &-size08{
-        font-size: 0.875em;
-    }
-    &-size11{
-        font-size: 1.12em;
-    }
-    &-size15{
-        font-size: 1.5em;
-    }
-}
 .button{
     text-decoration: none;
     color: $color-white;
@@ -75,6 +22,7 @@ body{
             $icon-color: $color-accent,
         )
     }
+
     &-web{
         @include icons(
         $icon-size: 24px,
@@ -83,21 +31,27 @@ body{
     )
     }
 }
+.content-wrapper{
+    max-width: 799px;
+    min-width: 360px;
+}
 header{
     #header-bg{
         background-image: url('../images/header.png');
         background-repeat: no-repeat;
         background-size: cover;
         min-width: 360px;
-        min-height: 200px;
-        height: 55vw;
+        padding-top: 45.13% ;
     }
     #call-to-action{
         background-color: $color-white;
         padding: 10px 10px 20px 10px;
-        box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+        box-shadow: 0px 4px 100px rgba(0, 0, 0, 0.1);
         &-title{
             font-size: 2em;
+        }
+        &-text{
+            font-size: 1.25em;
         }
         &-button{
             margin: auto;
