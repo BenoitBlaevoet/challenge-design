@@ -1,0 +1,59 @@
+// Layout for screen starting at 1150px
+@media only screen and (min-width: 1150px) {
+    .content-wrapper{
+        max-width: 1240px;
+        margin: auto;
+    }
+    header{
+        #call-to-action{
+            width: 741px;
+            height: 537px;
+            padding: 96px 150px 75px 64px;
+        }
+    }
+    section:not(#sitemap, #about){
+        padding: 0 100px;
+    }
+    #possibilities{
+        &-wrapper{
+            article{
+                grid-template-rows: 247px 120px 90px 120px ;
+                width: 386px;
+            }
+        }
+    }
+    #tools{
+        margin-bottom: 260px;
+        &-wrapper{
+            grid-template-areas: 
+                        "title title title title"
+                        "b c d e"; 
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            column-gap: 40px;
+        }
+        article{
+            grid-template-rows: auto 100px 95px auto;
+        }
+        h2{
+            margin-bottom: 108px;
+        }
+        h4{
+            margin-top:64px;
+        }
+    }
+    #advantages{ 
+        &-wrapper{
+            column-gap: 40px;
+            grid-template-columns: 1fr 1fr 1fr;
+            article{
+                grid-template-rows: 96px 80px auto;
+            }
+        }
+    } 
+    footer{
+        #footer-wrapper{
+            padding: 96px 103px 65px 103px;
+        }
+    
+    }
+}

@@ -1,8 +1,7 @@
 // Layout for screen starting at 800px
 @media only screen and (min-width: 800px){
     .content-wrapper{
-        min-width: 800px;
-        max-width: 1440px;
+        max-width: 1150px;
         margin: auto;
     }
     //Potentiellement effectuer ce changement a 1200px
@@ -11,11 +10,12 @@
         #call-to-action{
             box-sizing: border-box;
             position: absolute;
-            width: 741px;
-            height: 537px;
+            width: 541px;
+            height: 437px;
             margin-left: 63px;
-            bottom: -264px;
-            padding: 96px 150px 75px 64px;
+            bottom: -218px;
+            padding: 48px 75px 37px 32px;
+            box-shadow: 0px 4px 100px rgba(0, 0, 0, 0.1);
             &-button{
                 margin: 0; 
             }
@@ -23,7 +23,7 @@
         margin-bottom: 264px+128px;
     }
     section:not(#sitemap, #about){
-        padding: 0 100px;
+        padding: 0 10px;
         article{
             &+article{
                 margin-top: 0px;
@@ -34,10 +34,11 @@
         &-wrapper{
             display: flex;
             justify-content: space-around;
+            gap: 10px;
             article{
                 display: grid;
-                grid-template-rows: 247px 120px 80px 120px ;
-                width: 386px;
+                grid-template-rows: 247px 140px 100px 120px ;
+                width: 28%;
                 img{
                     width: 64%;
                 }
@@ -46,6 +47,7 @@
         
     }
     #tools{
+        margin-top: 260px;
         margin-bottom: 260px;
         &-wrapper{
             display: grid;
@@ -54,23 +56,20 @@
                                 "b c"
                                 "d e";
             grid-template-columns: 1fr 1fr;
-            @media only screen and (min-width: 1150px) {
-                grid-template-areas: 
-                                    "title title title title"
-                                    "b c d e"; 
-                grid-template-columns: 1fr 1fr 1fr 1fr;
-            }
+            column-gap: 40px;
+            row-gap: 40px;
             align-items: baseline;
             h2{
                 grid-area: title;
-                margin-bottom: 108px;
+                margin-bottom: 58px;
             }
             h4{
-                margin-top:64px;
+                margin-top:10px;
             }
             article{
                 display: grid;
-                grid-template-rows: auto auto 75px auto;
+                grid-template-rows: auto 60px 85px auto;
+                margin-bottom: 20px;
             }
         }
     }
@@ -79,17 +78,24 @@
         margin-bottom: 232px;
         &-wrapper{
             display: grid;
-            grid-template-columns: 440px 1fr 1fr 1fr;
+            grid-template-areas:    "cta cta cta"
+                                    "a b c";
+            grid-template-columns: 1fr 1fr 1fr;
             #community-cta{
+                margin-bottom: 30px;
+                width: 400px;
+                grid-area: cta;
                 display: block;
                 padding-right: 100px;
+                h2{
+                    margin-top: 0;
+                }
                 p{
                     text-align: left;
                 }
             }
         }
     }
-    
     #advantages{ 
         margin-bottom: 251px;   
         &-wrapper{
@@ -97,13 +103,11 @@
             grid-template-areas: 
                                 "title title title"
                                 "b c d"; 
-            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-columns: 30% 30% 30%;
+            column-gap: 15px;
             article{
                 display: grid;
-                grid-template-rows: 96px 80px auto;
-            }
-            article+article{
-                margin-left: 41px;
+                grid-template-rows: 96px 96px auto;
             }
         }
         h2{
@@ -112,8 +116,11 @@
         }
     }
     footer{
-        padding: 96px 103px 65px 103px;
         display: block;
+        #footer-wrapper{
+            box-sizing: border-box;
+            padding: 50px 10px 32px 10px;
+        }
         #sitemap{
             margin-bottom: 85px;
             h3{

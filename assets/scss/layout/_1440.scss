@@ -1,0 +1,11 @@
+// Layout for screen starting at 800px
+@media only screen and (min-width: 1400px) {
+    #community{
+        &-wrapper{
+            display: grid;
+            grid-template-columns: 440px 1fr 1fr 1fr;
+            grid-template-areas:    "cta a b c";
+            
+        }
+    }
+}
