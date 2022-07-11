@@ -22,7 +22,6 @@
             $icon-color: $color-accent,
         )
     }
-
     &-web{
         @include icons(
         $icon-size: 24px,
@@ -36,13 +35,40 @@
     min-width: 360px;
 }
 header{
-    background-image: url('../images/header.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-width: 360px;
-    padding-top: 45.13% ;
     #header-bg{
+        background-image: url('../images/header.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-width: 360px;
+        padding-top: 45.13% ;
+        position: relative;
+        height: 100%;
     }
+    #login{
+        box-sizing: border-box;
+        width: 86px;
+        height: 53px;
+        padding: 10px 14px;
+        border-radius: 26px;
+        background-color: $color-white;
+        position: absolute;
+        top: 30px;
+        right: 60px;
+        display: flex;
+        gap: 2px;
+        &-arrow{
+            background-image: url($icon-expanddown-path);
+            width: 24px;
+            height: 24px;
+            align-self: center;
+        }
+        &-user{
+            background-image: url($icon-user-path);
+            width: 32px;
+            height: 32px;
+        }
+    }
+    
     #call-to-action{
         background-color: $color-white;
         padding: 10px 10px 20px 10px;

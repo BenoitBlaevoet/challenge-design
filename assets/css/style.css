@@ -176,72 +176,104 @@ body {
   margin-right: 8px;
 }
 
-/* line 34, ../../OneDrive/Documents/BeCode/challenge-design/assets/scss/layout/_mobile.scss */
+/* line 33, ../../OneDrive/Documents/BeCode/challenge-design/assets/scss/layout/_mobile.scss */
 .content-wrapper {
   max-width: 799px;
   min-width: 360px;
 }
 
 /* line 38, ../../OneDrive/Documents/BeCode/challenge-design/assets/scss/layout/_mobile.scss */
-header {
+header #header-bg {
   background-image: url("../images/header.png");
   background-repeat: no-repeat;
   background-size: cover;
   min-width: 360px;
   padding-top: 45.13%;
+  position: relative;
+  height: 100%;
 }
 
-/* line 46, ../../OneDrive/Documents/BeCode/challenge-design/assets/scss/layout/_mobile.scss */
+/* line 47, ../../OneDrive/Documents/BeCode/challenge-design/assets/scss/layout/_mobile.scss */
+header #login {
+  box-sizing: border-box;
+  width: 86px;
+  height: 53px;
+  padding: 10px 14px;
+  border-radius: 26px;
+  background-color: #fff;
+  position: absolute;
+  top: 30px;
+  right: 60px;
+  display: flex;
+  gap: 2px;
+}
+
+/* line 59, ../../OneDrive/Documents/BeCode/challenge-design/assets/scss/layout/_mobile.scss */
+header #login-arrow {
+  background-image: url("../icons/expand_less.svg");
+  width: 24px;
+  height: 24px;
+  align-self: center;
+}
+
+/* line 65, ../../OneDrive/Documents/BeCode/challenge-design/assets/scss/layout/_mobile.scss */
+header #login-user {
+  background-image: url("../icons/user.svg");
+  width: 32px;
+  height: 32px;
+}
+
+/* line 72, ../../OneDrive/Documents/BeCode/challenge-design/assets/scss/layout/_mobile.scss */
 header #call-to-action {
   background-color: #fff;
   padding: 10px 10px 20px 10px;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-/* line 50, ../../OneDrive/Documents/BeCode/challenge-design/assets/scss/layout/_mobile.scss */
+/* line 76, ../../OneDrive/Documents/BeCode/challenge-design/assets/scss/layout/_mobile.scss */
 header #call-to-action-title {
   font-size: 2em;
 }
 
-/* line 53, ../../OneDrive/Documents/BeCode/challenge-design/assets/scss/layout/_mobile.scss */
+/* line 79, ../../OneDrive/Documents/BeCode/challenge-design/assets/scss/layout/_mobile.scss */
 header #call-to-action-text {
   font-size: 1.25em;
 }
 
-/* line 56, ../../OneDrive/Documents/BeCode/challenge-design/assets/scss/layout/_mobile.scss */
+/* line 82, ../../OneDrive/Documents/BeCode/challenge-design/assets/scss/layout/_mobile.scss */
 header #call-to-action-button {
   margin: auto;
 }
 
-/* line 61, ../../OneDrive/Documents/BeCode/challenge-design/assets/scss/layout/_mobile.scss */
+/* line 87, ../../OneDrive/Documents/BeCode/challenge-design/assets/scss/layout/_mobile.scss */
 section {
   margin-top: 50px;
   padding: 10px;
 }
 
-/* line 64, ../../OneDrive/Documents/BeCode/challenge-design/assets/scss/layout/_mobile.scss */
+/* line 90, ../../OneDrive/Documents/BeCode/challenge-design/assets/scss/layout/_mobile.scss */
 section a {
   text-decoration: none;
 }
 
-/* line 66, ../../OneDrive/Documents/BeCode/challenge-design/assets/scss/layout/_mobile.scss */
+/* line 92, ../../OneDrive/Documents/BeCode/challenge-design/assets/scss/layout/_mobile.scss */
 section a:hover:not(.button), section a:focus:not(.button) {
   filter: brightness(90%);
   text-decoration: underline;
 }
 
-/* line 72, ../../OneDrive/Documents/BeCode/challenge-design/assets/scss/layout/_mobile.scss */
+/* line 98, ../../OneDrive/Documents/BeCode/challenge-design/assets/scss/layout/_mobile.scss */
 section article + article {
   margin-top: 50px;
 }
 
-/* line 78, ../../OneDrive/Documents/BeCode/challenge-design/assets/scss/layout/_mobile.scss */
+/* line 104, ../../OneDrive/Documents/BeCode/challenge-design/assets/scss/layout/_mobile.scss */
 #possibilities article {
   display: flex;
   flex-direction: column;
 }
 
-/* line 81, ../../OneDrive/Documents/BeCode/challenge-design/assets/scss/layout/_mobile.scss */
+/* line 107, ../../OneDrive/Documents/BeCode/challenge-design/assets/scss/layout/_mobile.scss */
 #possibilities article img {
   align-self: center;
   width: 80%;
@@ -292,25 +324,25 @@ section article + article {
   margin-right: 8px;
 }
 
-/* line 116, ../../OneDrive/Documents/BeCode/challenge-design/assets/scss/layout/_mobile.scss */
+/* line 142, ../../OneDrive/Documents/BeCode/challenge-design/assets/scss/layout/_mobile.scss */
 #community {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-/* line 120, ../../OneDrive/Documents/BeCode/challenge-design/assets/scss/layout/_mobile.scss */
+/* line 146, ../../OneDrive/Documents/BeCode/challenge-design/assets/scss/layout/_mobile.scss */
 #community-cta {
   display: flex;
   flex-direction: column;
 }
 
-/* line 123, ../../OneDrive/Documents/BeCode/challenge-design/assets/scss/layout/_mobile.scss */
+/* line 149, ../../OneDrive/Documents/BeCode/challenge-design/assets/scss/layout/_mobile.scss */
 #community-cta p {
   text-align: center;
 }
 
-/* line 126, ../../OneDrive/Documents/BeCode/challenge-design/assets/scss/layout/_mobile.scss */
+/* line 152, ../../OneDrive/Documents/BeCode/challenge-design/assets/scss/layout/_mobile.scss */
 #community-cta .button {
   align-self: center;
 }
@@ -348,7 +380,7 @@ section article + article {
   margin-right: 8px;
 }
 
-/* line 154, ../../OneDrive/Documents/BeCode/challenge-design/assets/scss/layout/_mobile.scss */
+/* line 180, ../../OneDrive/Documents/BeCode/challenge-design/assets/scss/layout/_mobile.scss */
 footer {
   background-color: #F7F7F7;
   display: flex;
@@ -356,7 +388,7 @@ footer {
   font-size: 0.85em;
 }
 
-/* line 159, ../../OneDrive/Documents/BeCode/challenge-design/assets/scss/layout/_mobile.scss */
+/* line 185, ../../OneDrive/Documents/BeCode/challenge-design/assets/scss/layout/_mobile.scss */
 footer hr {
   border-color: #000;
   border: 0 0 1px 0;
@@ -364,17 +396,17 @@ footer hr {
   opacity: 0.5;
 }
 
-/* line 165, ../../OneDrive/Documents/BeCode/challenge-design/assets/scss/layout/_mobile.scss */
+/* line 191, ../../OneDrive/Documents/BeCode/challenge-design/assets/scss/layout/_mobile.scss */
 footer h3 {
   text-align: center;
 }
 
-/* line 168, ../../OneDrive/Documents/BeCode/challenge-design/assets/scss/layout/_mobile.scss */
+/* line 194, ../../OneDrive/Documents/BeCode/challenge-design/assets/scss/layout/_mobile.scss */
 footer #about {
   margin-top: 10px;
 }
 
-/* line 171, ../../OneDrive/Documents/BeCode/challenge-design/assets/scss/layout/_mobile.scss */
+/* line 197, ../../OneDrive/Documents/BeCode/challenge-design/assets/scss/layout/_mobile.scss */
 footer blockquote {
   margin: auto;
   width: 150px;
@@ -384,23 +416,23 @@ footer blockquote {
   font-style: normal;
 }
 
-/* line 179, ../../OneDrive/Documents/BeCode/challenge-design/assets/scss/layout/_mobile.scss */
+/* line 205, ../../OneDrive/Documents/BeCode/challenge-design/assets/scss/layout/_mobile.scss */
 footer ul {
   list-style: none;
   padding: 0;
 }
 
-/* line 182, ../../OneDrive/Documents/BeCode/challenge-design/assets/scss/layout/_mobile.scss */
+/* line 208, ../../OneDrive/Documents/BeCode/challenge-design/assets/scss/layout/_mobile.scss */
 footer ul a {
   color: #000;
 }
 
-/* line 184, ../../OneDrive/Documents/BeCode/challenge-design/assets/scss/layout/_mobile.scss */
+/* line 210, ../../OneDrive/Documents/BeCode/challenge-design/assets/scss/layout/_mobile.scss */
 footer ul a:visited {
   color: #000;
 }
 
-/* line 187, ../../OneDrive/Documents/BeCode/challenge-design/assets/scss/layout/_mobile.scss */
+/* line 213, ../../OneDrive/Documents/BeCode/challenge-design/assets/scss/layout/_mobile.scss */
 footer ul a:hover, footer ul a:focus {
   color: #1a1a1a;
 }
@@ -417,6 +449,10 @@ footer ul a:hover, footer ul a:focus {
     margin-bottom: 392px;
   }
   /* line 10, ../../OneDrive/Documents/BeCode/challenge-design/assets/scss/layout/_800.scss */
+  header #login {
+    right: 122px;
+  }
+  /* line 13, ../../OneDrive/Documents/BeCode/challenge-design/assets/scss/layout/_800.scss */
   header #call-to-action {
     box-sizing: border-box;
     position: absolute;
@@ -427,40 +463,40 @@ footer ul a:hover, footer ul a:focus {
     padding: 48px 75px 37px 32px;
     box-shadow: 0px 4px 100px rgba(0, 0, 0, 0.1);
   }
-  /* line 19, ../../OneDrive/Documents/BeCode/challenge-design/assets/scss/layout/_800.scss */
+  /* line 22, ../../OneDrive/Documents/BeCode/challenge-design/assets/scss/layout/_800.scss */
   header #call-to-action-button {
     margin: 0;
   }
-  /* line 25, ../../OneDrive/Documents/BeCode/challenge-design/assets/scss/layout/_800.scss */
+  /* line 28, ../../OneDrive/Documents/BeCode/challenge-design/assets/scss/layout/_800.scss */
   section:not(#sitemap):not(#about) {
     padding: 0 10px;
   }
-  /* line 28, ../../OneDrive/Documents/BeCode/challenge-design/assets/scss/layout/_800.scss */
+  /* line 31, ../../OneDrive/Documents/BeCode/challenge-design/assets/scss/layout/_800.scss */
   section  article + article {
     margin-top: 0px;
   }
-  /* line 34, ../../OneDrive/Documents/BeCode/challenge-design/assets/scss/layout/_800.scss */
+  /* line 37, ../../OneDrive/Documents/BeCode/challenge-design/assets/scss/layout/_800.scss */
   #possibilities-wrapper {
     display: flex;
     justify-content: space-around;
     gap: 10px;
   }
-  /* line 38, ../../OneDrive/Documents/BeCode/challenge-design/assets/scss/layout/_800.scss */
+  /* line 41, ../../OneDrive/Documents/BeCode/challenge-design/assets/scss/layout/_800.scss */
   #possibilities-wrapper article {
     display: grid;
     grid-template-rows: 247px 140px 100px 120px;
     width: 28%;
   }
-  /* line 42, ../../OneDrive/Documents/BeCode/challenge-design/assets/scss/layout/_800.scss */
+  /* line 45, ../../OneDrive/Documents/BeCode/challenge-design/assets/scss/layout/_800.scss */
   #possibilities-wrapper article img {
     width: 64%;
   }
-  /* line 49, ../../OneDrive/Documents/BeCode/challenge-design/assets/scss/layout/_800.scss */
+  /* line 52, ../../OneDrive/Documents/BeCode/challenge-design/assets/scss/layout/_800.scss */
   #tools {
     margin-top: 260px;
     margin-bottom: 260px;
   }
-  /* line 52, ../../OneDrive/Documents/BeCode/challenge-design/assets/scss/layout/_800.scss */
+  /* line 55, ../../OneDrive/Documents/BeCode/challenge-design/assets/scss/layout/_800.scss */
   #tools-wrapper {
     display: grid;
     grid-template-areas: "title title" "b c" "d e";
@@ -469,33 +505,33 @@ footer ul a:hover, footer ul a:focus {
     row-gap: 40px;
     align-items: baseline;
   }
-  /* line 62, ../../OneDrive/Documents/BeCode/challenge-design/assets/scss/layout/_800.scss */
+  /* line 65, ../../OneDrive/Documents/BeCode/challenge-design/assets/scss/layout/_800.scss */
   #tools-wrapper h2 {
     grid-area: title;
     margin-bottom: 58px;
   }
-  /* line 66, ../../OneDrive/Documents/BeCode/challenge-design/assets/scss/layout/_800.scss */
+  /* line 69, ../../OneDrive/Documents/BeCode/challenge-design/assets/scss/layout/_800.scss */
   #tools-wrapper h4 {
     margin-top: 10px;
   }
-  /* line 69, ../../OneDrive/Documents/BeCode/challenge-design/assets/scss/layout/_800.scss */
+  /* line 72, ../../OneDrive/Documents/BeCode/challenge-design/assets/scss/layout/_800.scss */
   #tools-wrapper article {
     display: grid;
     grid-template-rows: auto 60px 85px auto;
     margin-bottom: 20px;
   }
-  /* line 76, ../../OneDrive/Documents/BeCode/challenge-design/assets/scss/layout/_800.scss */
+  /* line 79, ../../OneDrive/Documents/BeCode/challenge-design/assets/scss/layout/_800.scss */
   #community {
     display: block;
     margin-bottom: 232px;
   }
-  /* line 79, ../../OneDrive/Documents/BeCode/challenge-design/assets/scss/layout/_800.scss */
+  /* line 82, ../../OneDrive/Documents/BeCode/challenge-design/assets/scss/layout/_800.scss */
   #community-wrapper {
     display: grid;
     grid-template-areas: "cta cta cta" "a b c";
     grid-template-columns: 1fr 1fr 1fr;
   }
-  /* line 84, ../../OneDrive/Documents/BeCode/challenge-design/assets/scss/layout/_800.scss */
+  /* line 87, ../../OneDrive/Documents/BeCode/challenge-design/assets/scss/layout/_800.scss */
   #community-wrapper #community-cta {
     margin-bottom: 30px;
     width: 400px;
@@ -503,72 +539,72 @@ footer ul a:hover, footer ul a:focus {
     display: block;
     padding-right: 100px;
   }
-  /* line 90, ../../OneDrive/Documents/BeCode/challenge-design/assets/scss/layout/_800.scss */
+  /* line 93, ../../OneDrive/Documents/BeCode/challenge-design/assets/scss/layout/_800.scss */
   #community-wrapper #community-cta h2 {
     margin-top: 0;
   }
-  /* line 93, ../../OneDrive/Documents/BeCode/challenge-design/assets/scss/layout/_800.scss */
+  /* line 96, ../../OneDrive/Documents/BeCode/challenge-design/assets/scss/layout/_800.scss */
   #community-wrapper #community-cta p {
     text-align: left;
   }
-  /* line 99, ../../OneDrive/Documents/BeCode/challenge-design/assets/scss/layout/_800.scss */
+  /* line 102, ../../OneDrive/Documents/BeCode/challenge-design/assets/scss/layout/_800.scss */
   #advantages {
     margin-bottom: 251px;
   }
-  /* line 101, ../../OneDrive/Documents/BeCode/challenge-design/assets/scss/layout/_800.scss */
+  /* line 104, ../../OneDrive/Documents/BeCode/challenge-design/assets/scss/layout/_800.scss */
   #advantages-wrapper {
     display: grid;
     grid-template-areas: "title title title" "b c d";
     grid-template-columns: 30% 30% 30%;
     column-gap: 15px;
   }
-  /* line 108, ../../OneDrive/Documents/BeCode/challenge-design/assets/scss/layout/_800.scss */
+  /* line 111, ../../OneDrive/Documents/BeCode/challenge-design/assets/scss/layout/_800.scss */
   #advantages-wrapper article {
     display: grid;
     grid-template-rows: 96px 96px auto;
   }
-  /* line 113, ../../OneDrive/Documents/BeCode/challenge-design/assets/scss/layout/_800.scss */
+  /* line 116, ../../OneDrive/Documents/BeCode/challenge-design/assets/scss/layout/_800.scss */
   #advantages h2 {
     grid-area: title;
     margin-bottom: 108px;
   }
-  /* line 118, ../../OneDrive/Documents/BeCode/challenge-design/assets/scss/layout/_800.scss */
+  /* line 121, ../../OneDrive/Documents/BeCode/challenge-design/assets/scss/layout/_800.scss */
   footer {
     display: block;
   }
-  /* line 120, ../../OneDrive/Documents/BeCode/challenge-design/assets/scss/layout/_800.scss */
+  /* line 123, ../../OneDrive/Documents/BeCode/challenge-design/assets/scss/layout/_800.scss */
   footer #footer-wrapper {
     box-sizing: border-box;
     padding: 50px 10px 32px 10px;
   }
-  /* line 124, ../../OneDrive/Documents/BeCode/challenge-design/assets/scss/layout/_800.scss */
+  /* line 127, ../../OneDrive/Documents/BeCode/challenge-design/assets/scss/layout/_800.scss */
   footer #sitemap {
     margin-bottom: 85px;
     display: flex;
     justify-content: space-between;
   }
-  /* line 126, ../../OneDrive/Documents/BeCode/challenge-design/assets/scss/layout/_800.scss */
+  /* line 129, ../../OneDrive/Documents/BeCode/challenge-design/assets/scss/layout/_800.scss */
   footer #sitemap h3 {
     text-align: left;
   }
-  /* line 129, ../../OneDrive/Documents/BeCode/challenge-design/assets/scss/layout/_800.scss */
+  /* line 132, ../../OneDrive/Documents/BeCode/challenge-design/assets/scss/layout/_800.scss */
   footer #sitemap li {
     margin-bottom: 24px;
   }
-  /* line 135, ../../OneDrive/Documents/BeCode/challenge-design/assets/scss/layout/_800.scss */
+  /* line 138, ../../OneDrive/Documents/BeCode/challenge-design/assets/scss/layout/_800.scss */
   footer hr {
     margin-bottom: 18px;
   }
-  /* line 138, ../../OneDrive/Documents/BeCode/challenge-design/assets/scss/layout/_800.scss */
+  /* line 141, ../../OneDrive/Documents/BeCode/challenge-design/assets/scss/layout/_800.scss */
   footer #about {
     display: flex;
   }
-  /* line 140, ../../OneDrive/Documents/BeCode/challenge-design/assets/scss/layout/_800.scss */
+  /* line 143, ../../OneDrive/Documents/BeCode/challenge-design/assets/scss/layout/_800.scss */
   footer #about .link-list-flat {
     margin-left: auto;
     display: flex;
   }
-  /* line 143, ../../OneDrive/Documents/BeCode/challenge-design/assets/scss/layout/_800.scss */
+  /* line 146, ../../OneDrive/Documents/BeCode/challenge-design/assets/scss/layout/_800.scss */
   footer #about .link-list-flat li + li {
     margin-left: 48px;
   }
